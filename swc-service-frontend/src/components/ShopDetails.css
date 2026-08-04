@@ -1,0 +1,373 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.shop-container {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.shop-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #081c3a;
+  color: white;
+  padding: 18px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.shop-header h2 {
+  color: gold;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.shop-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.shop-header nav span {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.shop-header nav span:hover {
+  color: gold;
+}
+
+/* ===========================
+   HOME BUTTON
+=========================== */
+
+.home-btn {
+  margin-left: 20px;
+  padding: 10px 18px;
+  background: gold;
+  color: #081c3a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section {
+  min-height: 100vh;
+  padding: 130px 70px 70px;
+}
+
+.section h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #081c3a;
+  font-size: 42px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.home-section {
+  background: linear-gradient(135deg, #081c3a, #123d72);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: gold;
+  font-size: 60px;
+}
+
+.hero-content h2 {
+  margin: 20px 0;
+  font-size: 34px;
+  color: white;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  color: #e8e8e8;
+}
+
+.explore-btn {
+  margin-top: 40px;
+  padding: 15px 35px;
+  background: gold;
+  border: none;
+  color: #081c3a;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: white;
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-section {
+  background: white;
+}
+
+.about-description {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.4s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card h2 {
+  color: #081c3a;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   WATCHES
+=========================== */
+
+.watches-section {
+  background: #eef4fb;
+  text-align: center;
+}
+
+.watch-text {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.slider {
+  position: relative;
+  max-width: 650px;
+  margin: auto;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left {
+  left: -25px;
+}
+
+.right {
+  right: -25px;
+}
+
+.nav-btn:hover {
+  background: gold;
+  color: black;
+}
+
+/* ===========================
+   LOCATION
+=========================== */
+
+.location-section {
+  background: white;
+}
+
+.location-card {
+  max-width: 850px;
+  margin: 30px auto;
+  background: #f8fbff;
+  border-left: 6px solid gold;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h2 {
+  color: #081c3a;
+  margin-bottom: 15px;
+}
+
+.location-card h3 {
+  margin-top: 20px;
+  color: #d97706;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-section {
+  background: linear-gradient(135deg, #081c3a, #123d72);
+  color: white;
+}
+
+.contact-section h1 {
+  color: gold;
+}
+
+.contact-card {
+  max-width: 750px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-card h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.contact-card p {
+  color: #f1f1f1;
+  margin-bottom: 12px;
+}
+
+.contact-card h3 {
+  margin-top: 30px;
+  color: gold;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gold;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .shop-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .shop-header nav {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-header nav span {
+    margin: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 140px 25px 60px;
+  }
+
+  .left {
+    left: -10px;
+  }
+
+  .right {
+    right: -10px;
+  }
+
+  .nav-btn {
+    width: 45px;
+    height: 45px;
+  }
+}

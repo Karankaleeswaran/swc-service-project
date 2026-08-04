@@ -19,7 +19,7 @@ function Register({ setShowRegister }) {
     try {
       await registerUser(user);
       alert("Registration successful!");
-      setShowRegister(false); // 🔥 go back to login
+      setShowRegister(false); // go back to login
     } catch (err) {
       alert("Error during registration");
     }
@@ -38,6 +38,7 @@ function Register({ setShowRegister }) {
             name="username"
             value={user.username}
             onChange={handleChange}
+            placeholder="Example : Arun Kumar"
             required
           />
           <label>Username</label>
@@ -50,6 +51,7 @@ function Register({ setShowRegister }) {
             name="email"
             value={user.email}
             onChange={handleChange}
+            placeholder="Email id : example@gmail.com"
             required
           />
           <label>Email</label>
@@ -62,6 +64,7 @@ function Register({ setShowRegister }) {
             name="password"
             value={user.password}
             onChange={handleChange}
+            placeholder="Enter Your Password"
             required
           />
           <label>Password</label>

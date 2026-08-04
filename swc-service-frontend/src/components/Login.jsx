@@ -40,6 +40,7 @@ function Login({ setLoggedIn, setShowRegister }) {
             name="email"
             value={user.email}
             onChange={handleChange}
+            placeholder="Email id : example@gmail.com"
             required
           />
           <label>Email</label>
@@ -52,6 +53,7 @@ function Login({ setLoggedIn, setShowRegister }) {
             name="password"
             value={user.password}
             onChange={handleChange}
+            placeholder="Enter Your Password"
             required
           />
           <label>Password</label>
